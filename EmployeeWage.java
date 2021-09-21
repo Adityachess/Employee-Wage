@@ -6,19 +6,15 @@ public class EmployeeWage {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Welcome to Employee Wage Computation Programme");
+		int dayspermnth = 20;
+		int wageperhr = 20;
+		int dailyhr = 8;
+		int dailywage = wageperhr * dailyhr;
 
-		Random ran = new Random();
-		
-		int empCheck = ran.nextInt(2);
-		
-		switch (empCheck) {
-		case 0:
-			System.out.println("Employee is Present.");
-			break;
+		System.out.println("Employee Daily Wage =" + dailywage);
 
-		default:
-			System.out.println("Employee is Absent");
-		}
+		int monthlywage = dailywage * dayspermnth;
+
+		System.out.println("Monthly Wage Of Employee is =" + monthlywage);
 	}
 }
